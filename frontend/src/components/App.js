@@ -1,9 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
-import store from './store';
-import Contract from './components/Contract';
-import './App.css';
+import store from '../store';
+import Contract from './Contract';
+import LineChartDemo from './LineChart';
+
 
 const App = () => (
   <Provider store={store}>
@@ -12,6 +13,7 @@ const App = () => (
         <a className="navbar-brand" href="/">AppName</a>
       </nav>
       <Contract />
+      <LineChartDemo />
     </div>
   </Provider>
 );
