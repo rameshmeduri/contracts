@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node ./src/server.js",
+    "dev:watch": "nodemon --exec npm run dev",
+    "start": "npm run dev:watch",
+    "format": "prettier --single-quote --arrow-parens always --prose-wrap never --write './src/**/*.{js,json}'"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "morgan": "^1.9.1",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "prettier": "^1.16.4"
+  }
+}
